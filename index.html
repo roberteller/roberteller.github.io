@@ -11,44 +11,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Robert Eller, PhD</title>
+
     <style>
         body {
-            font-family: sans-serif;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
             margin: 0;
-            padding: 20px;
+            padding: 0;
         }
-
-        h1, h2 {
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
             text-align: center;
         }
-
-        a:hover {
-            background-color: #eee;
+        .header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
         }
-
-        @media (max-width: 600px) {
-            body {
-                padding: 10px;
-            }
-
-            a {
-                font-size: 16px;
-            }
+        .header h1 {
+            margin: 0;
+        }
+        .link-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .link-list li {
+            margin: 10px 0;
+        }
+        .link-list a {
+            display: block;
+            padding: 10px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            text-decoration: none;
+            color: #333;
+            transition: background-color 0.3s ease;
+        }
+        .link-list a:hover {
+            background-color: #f0f0f0;
         }
     </style>
 </head>
 <body>
+    
+
+    <body>
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KHLMS276"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <h1>Robert Eller, PhD</h1>
-    <div>Lets build an autonomous company</div>
-    <div><a href="https://orcid.org/0000-0003-2601-5182">Orchid</a></div>
-    <div><a href="https://www.linkedin.com/in/robert-eller/">LinkedIn</a></div>
-    <div><a href="https://roberteller.substack.com/">Newsletter</a></div>
-    <div><a href="https://scholar.google.com/citations?user=rWpNUXsAAAAJ&hl=en">Google Scholar</a></div>
-    <div><a href="https://www.researchgate.net/profile/Robert-Eller">Research Gate</a></div>
-
+    <div class="container">
+        <div class="header">
+            <h1>Robert Eller, PhD</h1>
+        </div>
+        <ul class="link-list">
+            <li><a href="https://www.linkedin.com/in/robert-eller/">LinkedIn</a></li>
+            <li><a href="https://roberteller.substack.com/">Newsletter</a></li>
+            <li><a href="https://orcid.org/0000-0003-2601-5182">Orchid</a></li>
+            <li><a href="https://scholar.google.com/citations?user=rWpNUXsAAAAJ&hl=en">Google Scholar</a></li>
+            <li><a href="https://www.researchgate.net/profile/Robert-Eller">Research Gate</a></li>
+            <li><a href="https://github.com/roberteller">GitHub</a></li>
+        </ul>
+    </div>
 </body>
 </html>
