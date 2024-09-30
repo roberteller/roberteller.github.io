@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Craigslist-like Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #f3f3f3;
+            padding: 10px;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 10px;
+        }
+        .column {
+            flex: 1;
+            min-width: 200px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        h2 {
+            margin-bottom: 10px;
+            background-color: #f3f3f3;
+            padding: 10px;
+            text-align: center;
+        }
+        a {
+            color: blue;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 600px) {
+            .column {
+                flex-basis: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Craigslist-like Website</h1>
+    </header>
+    <div class="container">
+        <div class="column">
+            <h2>Column 1</h2>
+            <ul>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+            </ul>
+        </div>
+        <div class="column">
+            <h2>Column 2</h2>
+            <ul>
+                <li><a href="#">Link 4</a></li>
+                <li><a href="#">Link 5</a></li>
+                <li><a href="#">Link 6</a></li>
+            </ul>
+        </div>
+        <div class="column">
+            <h2>Column 3</h2>
+            <ul>
+                <li><a href="#">Link 7</a></li>
+                <li><a href="#">Link 8</a></li>
+                <li><a href="#">Link 9</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
