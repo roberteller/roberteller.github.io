@@ -2,80 +2,165 @@
 <html lang="en">
 <head>
     <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-KHLMS276');</script>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-KHLMS276');</script>
     <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal website of Robert Eller, PhD. Researcher, writer, and technologist.">
     <title>Robert Eller, PhD</title>
-
     <style>
+        :root {
+            --primary: #4CAF50;
+            --secondary: #333;
+            --bg: #f4f4f9;
+            --card-bg: #fff;
+            --card-border: #e0e0e0;
+            --accent: #0077b5;
+        }
+        html {
+            box-sizing: border-box;
+        }
+        *, *:before, *:after {
+            box-sizing: inherit;
+        }
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
-            color: #333;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: var(--bg);
+            color: var(--secondary);
             margin: 0;
             padding: 0;
         }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
+        header {
+            background: var(--primary);
+            color: #fff;
+            padding: 40px 0 20px 0;
             text-align: center;
         }
-        .header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px 0;
+        .hero {
+            max-width: 700px;
+            margin: 0 auto;
         }
-        .header h1 {
-            margin: 0;
+        .hero h1 {
+            font-size: 2.8rem;
+            margin: 0 0 10px 0;
         }
-        .link-list {
-            list-style-type: none;
+        .hero h2 {
+            font-size: 1.5rem;
+            font-weight: 400;
+            margin: 0 0 18px 0;
+        }
+        .hero p {
+            font-size: 1.1rem;
+            margin: 0 0 10px 0;
+        }
+        nav {
+            margin: 30px 0 0 0;
+        }
+        nav ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 18px;
             padding: 0;
+            margin: 0;
+            list-style: none;
         }
-        .link-list li {
-            margin: 10px 0;
+        .link-card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 10px;
+            padding: 18px 24px;
+            min-width: 140px;
+            text-align: center;
+            transition: box-shadow 0.2s, transform 0.2s;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.03);
         }
-        .link-list a {
-            display: block;
-            padding: 10px;
-            background-color: #fff;
-            border: 1px solid #ddd;
-            border-radius: 5px;
+        .link-card a {
+            color: var(--secondary);
             text-decoration: none;
-            color: #333;
-            transition: background-color 0.3s ease;
+            font-weight: 500;
+            font-size: 1.1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
-        .link-list a:hover {
-            background-color: #f0f0f0;
+        .link-card:hover {
+            box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+            transform: translateY(-2px) scale(1.03);
+        }
+        main {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        section {
+            margin-bottom: 48px;
+            background: var(--card-bg);
+            border-radius: 10px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+            padding: 32px 24px;
+        }
+        section h2 {
+            margin-top: 0;
+            color: var(--primary);
+            font-size: 1.5rem;
+        }
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 2rem; }
+            .hero h2 { font-size: 1.1rem; }
+            nav ul { gap: 10px; }
+            .link-card { padding: 12px 8px; min-width: 100px; font-size: 0.95rem; }
+            main { padding: 0 5px; }
+            section { padding: 18px 6px; }
         }
     </style>
 </head>
 <body>
-    
-
-    <body>
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KHLMS276"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <div class="container">
-        <div class="header">
+    <header>
+        <div class="hero" role="banner">
             <h1>Robert Eller, PhD</h1>
+            <h2>Researcher, Writer, Technologist</h2>
+            <p>Welcome to my personal website. I explore the intersection of science, technology, and society. Connect with me, read my work, or learn more below.</p>
         </div>
-        <ul class="link-list">
-            <li><a href="https://www.linkedin.com/in/robert-eller/">LinkedIn</a></li>
-            <li><a href="https://roberteller.substack.com/">Newsletter</a></li>
-            <li><a href="https://orcid.org/0000-0003-2601-5182">Orchid</a></li>
-            <li><a href="https://scholar.google.com/citations?user=rWpNUXsAAAAJ&hl=en">Google Scholar</a></li>
-            <li><a href="https://www.researchgate.net/profile/Robert-Eller">Research Gate</a></li>
-            <li><a href="https://github.com/roberteller">GitHub</a></li>
-        </ul>
-    </div>
+        <nav aria-label="Social and Professional Links">
+            <ul>
+                <li class="link-card"><a href="https://www.linkedin.com/in/robert-eller/" target="_blank" rel="noopener" aria-label="LinkedIn"><span>LinkedIn</span></a></li>
+                <li class="link-card"><a href="https://roberteller.substack.com/" target="_blank" rel="noopener" aria-label="Newsletter"><span>Newsletter</span></a></li>
+                <li class="link-card"><a href="https://orcid.org/0000-0003-2601-5182" target="_blank" rel="noopener" aria-label="Orcid"><span>Orcid</span></a></li>
+                <li class="link-card"><a href="https://scholar.google.com/citations?user=rWpNUXsAAAAJ&hl=en" target="_blank" rel="noopener" aria-label="Google Scholar"><span>Google Scholar</span></a></li>
+                <li class="link-card"><a href="https://www.researchgate.net/profile/Robert-Eller" target="_blank" rel="noopener" aria-label="ResearchGate"><span>ResearchGate</span></a></li>
+                <li class="link-card"><a href="https://github.com/roberteller" target="_blank" rel="noopener" aria-label="GitHub"><span>GitHub</span></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <h2>About</h2>
+            <p>I'm Robert Eller, PhD. My work spans research, writing, and technology. I am passionate about advancing knowledge and sharing insights at the intersection of science and society. [Add more about your background, interests, and expertise here.]</p>
+        </section>
+        <section id="publications">
+            <h2>Publications</h2>
+            <p>Selected publications and research contributions. [Add a list of key papers, articles, or projects here. You can link to your Google Scholar or ResearchGate profiles above for a full list.]</p>
+        </section>
+        <section id="newsletter">
+            <h2>Newsletter</h2>
+            <p>Subscribe to my newsletter for updates on my latest work, thoughts, and curated content. [You can embed a Substack or other newsletter signup form here, or direct users to your Substack link above.]</p>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Feel free to reach out for collaborations, speaking engagements, or just to connect. [Add a contact form or your preferred contact method here, such as an email address or LinkedIn.]</p>
+        </section>
+    </main>
+    <footer style="text-align:center; color:#888; font-size:0.95rem; padding: 18px 0 10px 0;">
+        &copy; 2024 Robert Eller. All rights reserved.
+    </footer>
 </body>
 </html>
